@@ -3,17 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Nunito" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>If you play</h1>
-  <form>
-    <label for="video">youtube link</label>
-    <input name="video" type="text">
-    <label for="time">timestamp</label>
-    <input name="time" type="text">
-    <input type="submit" value="send">
-  </form>
+  <div class="fullscreen-bg">
+      <video loop muted autoplay poster="assets/bg.gif" class="fullscreen-bg__video">
+          <source src="assets/bg.mp4" type="video/mp4">
+      </video>
+  </div>
+  <header>
+    <h1>If you play</h1>
+    <p>Selecciona un video y "automaticamente" iniciará que dar en el mejor momento del vide, preciso a las 12 de la noche de año nuevo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YkADj0TPrJA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </video>
+  </header>
+  <h2>Agrega tu propio video</h2>
+  <section class="form-add">
+    <form action="add">
+      <label for="video">Ingresa el link de Youtube</label>
+      <input name="video" type="url">
+      <label for="time">Ingresa el mm:ss (Minuto:segundo)</label>
+      <input name="time" type="time" pattern="[0-9]*" />
+      <input type="submit" value="Listo">
+    </form>
+  </section>
+  <h2>Recomendados</h2>
+  <section class="recommended">
+    <ul>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+      <li><img src="assets/bg.gif" alt="Recomendado"></li>
+    </ul>
+  </section>
+
   <script src="index.js"></script>
 </body>
 </html>

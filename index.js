@@ -10,6 +10,11 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (request, response) => {
   response.sendFile('/public/index.html');
 });
+
+app.post('/add', (request, response) => {
+  console.log(request.body);
+});
+
 app.get('/play/?', (request, response) => {
   response.sendFile('/public/play.html');
 });
